@@ -1,0 +1,53 @@
+https://www.youtube.com/watch?v=E5Yq9TqUOK4
+
+Afrontando primeros problemas con el PowerWall DIY 18650
+5,586 views•Mar 13, 2021
+
+357
+
+4
+
+SHARE
+
+SAVE
+
+
+Víctor J Chamorro
+3.09K subscribers
+El invierno es duro.... analizo los problemas con des-balanceos y poca producción solar del invierno.
+
+#raspberry​ #solarenergy​ #18650​ #diy​
+
+Resto de vídeos explicando el montaje:
+https://www.youtube.com/watch?v=B9V00...​
+
+Serie de vídeos del montaje de la monitorización:
+https://www.youtube.com/watch?v=MzJ9o...​
+
+Serie de vídeos del mantenimiento de la instalación solar:
+https://www.youtube.com/watch?v=i3FLL...​
+
+- Materiales y herramientas:
+Adaptador Serial-TTL a USB: https://amzn.to/37jnGZQ​
+Raspberry pi 3b+: https://amzn.to/3b6SZIm​
+Monitor de baterías Victron BMV: https://amzn.to/3tVBXWl​
+
+Placa soldador de puntos para batería de coche: https://bit.ly/3fblBSg​
+BMS con Bluetooth: https://bit.ly/35E7a62​
+Cobre trenzado: https://bit.ly/3fc8d0j​
+Cargador OPUS: https://bit.ly/2KkQWGT​
+Fusibles de cristal: https://bit.ly/3kHyswD​
+Soporte celdas 18650: https://bit.ly/38QjWAw​
+Tira de níquel 0.12 10m: https://bit.ly/3pBWsF7​
+Tira de níquel 0.12 1Kg: https://amzn.to/2Httl5E​
+Barras de cola termo-fusible: https://amzn.to/2IVJOk5​
+Pistola de cola: https://amzn.to/33mnWVY​
+Soldador 80W temperatura ajustable: https://amzn.to/2UTvbjh​
+Mini Amoladora 200w: https://amzn.to/35XySuE​
+Estaño 60%Sn 38%Pb 2%Cu: https://bit.ly/382PPUf​
+
+Más fotos e info en https://twitter.com/victorjchamorro/s...​
+
+Si compráis mediante de los enlaces de los materiales y herramientas me ayudáis!
+
+Música: patrickdearteaga.com

@@ -1,0 +1,189 @@
+Foro solarweb.net
+https://www.solarweb.net/forosolar/
+
+devta
+XJMEEjp0
+
+---
+
+Ampliación de paneles
+https://www.solarweb.net/forosolar/fotovoltaica-sistemas-aislados-la-red/49815-ampliacion-paneles.html
+
+---
+
+Sobre baterías (básico) pero instructivo
+https://www.solarweb.net/forosolar/fotovoltaica-sistemas-aislados-la-red/45890-baterias-fotovoltaicas-nivel-basico.html
+
+
+---
+
+Predeterminado Baterías fotovoltaicas. Nivel básico.
+CONCEPTOS GENERALES
+
+La inmensa mayoría de instalaciones fotovoltaicas aisladas de la red eléctrica necesitan acumular parte de la energía producida por los módulos fotovoltaicos para su utilización en ausencia de radiación solar o cuando ésta no sea suficiente para generar la totalidad de la necesaria. Por tanto el acumulador o batería es una pieza clave de la instalación.Es muy importante que su tipo y capacidad sean las adecuadas para el consumo que van a cubrir dado que su precio es elevado. Una capacidad insuficiente impedirá la satisfacción de los consumos estimados y acortará su vida útil, y demasiada capacidad generará un sobreprecio importante de la instalación.
+
+Las baterías no pueden entregar toda la energía que reciben. Una parte se pierde en los procesos químicos que suceden en su interior a la hora de cargarse o descargarse. También pierden carga de manera natural aunque no se den ciclos de carga o descarga, es lo quese llama autodescarga, suele ser del orden del 0,5% ó 1% de la capacidad total por día. Pero una de las características mas a tener en cuenta a la hora de elegir un acumulador es lo que llamamos profundidad de descarga, que detallaremos someramente:
+
+La profundidad de descarga se expresa como un porcentaje y equivale a la cantidad de energía que puede suministrar la batería del total de su capacidad. Por ejemplo hay baterías que tienen una profundidad de descarga del 80%, lo que indica que de su capacidad nominal(capacidad total) podemos utilizar el 80% y el resto de energía no podrá ser utilizada. La energía total depende del tiempo que empleemos para la descarga. Una batería nos dará mas energía cuanto mas despacio se descargue. Por lo tanto si se descarga muy rápido su capacidad será menor. La duración del ciclo de carga se expresa en horas. Si vemos que el fabricante de una batería expresa su capacidad como 450Ah C50 nos está diciendo que la capacidad total de energía que contendrá será de 450 amperios por hora si la descargamos en 50 horas. De todas maneras hay que señalar que la profundidad de descarga ideal debe ser en la mayoría de los casos la mitad de la profundidad de descarga máxima admisible, siendo esta última alcanzada de manera esporádica.
+
+Recapitulando diremos que una batería que tiene una profundidad de descarga del 80% y cuya capacidad nominales 450 Ah C50 es una batería que si la descargamos en 50 horas nos dará el 80% de 450 Ah = 360 Ah.
+
+Las características que definen a un acumulador son:
+
+El tipo de acumulador.
+El material químico que lo compone.
+Su capacidad, que se expresa en Ah ( amperios por hora) y su tensión de trabajo, que se expresa en V (voltios)
+El tipo de carcasa exterior.
+Su profundidad de descarga.
+Su coeficiente de autodescarga.
+
+TIPOS DE ACUMULADORES
+
+Existen varios tipos de baterías siendo las mas extendidas las de tracción, arranque y las estacionarias.
+
+Las de tracción se utilizan para alimentar pequeños motores de vehículos eléctricos como elevadores o carritos para los que hace falta una intensidad moderada en espacios relativamente dilatados, a veces varias horas. Su profundidad de descarga puede llegar a ser igual a la de las estacionarias con la diferencia de que soportan mejor las descargas fuertes a cambio de una vida más corta.
+
+Un ejemplo sencillo de batería de arranque es la típica de automoción. Están diseñadas para realizar una gran descarga durante un espacio corto de tiempo. Eso las convierte en una mala elección para uso fotovoltaico. Además su capacidad suele ser en general baja y no admiten que se consuma una parte importante de su capacidad total (baja profundidad de descarga). Mayores descargas pueden suponer la muerte prematura de la misma. También acorta su vida útil realizar cargas incompletas.
+
+Las baterías de uso fotovoltaico son de tipo estacionario, diseñadas para ofrecer servicios semicontínuos o intermitentes de energía durante períodos largos de tiempo, varias horas o días. Su profundidad de descarga depende de su composición interna. Existe gran variedad de capacidades y se dividen en varios tipos en función de la composición química de los elementos que las componen. Solemos dividirlas también por el tipo de carcasa que tienen, ya que las de poca capacidad suelen venir en una carcasa tipo monoblock como las de coche (aunque su composición es diferente). Las de media y gran capacidad las componen elementos individuales de gran tamaño que tienen que ser interconectados entre si para conseguir la capacidad y el voltaje adecuados al uso que se le va a exigir. De los tipos existentes en función de su composición señalaremos:
+
+De plomo-acido: Son las que dominan el mercado, sobre todo por precio. Son sensibles a los cortocircuítos y requieren de un mantenimiento para que su vida útil no se reduzca. Además generan gases tóxicos, por lo que hay que dedicarles un espacio ventilado, aunque para pequeñas capacidades existen baterías selladas en las que se añade un gelificante que espesa los líquidos del electrolito con lo que no se producen perdidas de este, mejorando la recuperación en descargas profundas y evitando el rellenado y mantenimiento a cambio de una vida mas corta y un precio adicional (baterías de gel). .En grandes capacidades se utiliza para las placas internas una aleación de plomo y antimonio (Pb-Sb) que permite profundidades de descarga de hasta el 80% si esta es lenta. De todas maneras las profundidades de descarga óptimas deben ser inferiores al 50%. Estas baterías se presentan generalmente en vasos individuales de 2 voltios de tensión nominal y es necesario conectarlos hasta conseguir las tensiones comúnmente utilizadas en fotovoltaica, 12V,24V o 48V.
+De plomo calcio (Pb-Ca): Su precio es moderado. Tienen una baja autodescarga y carecen totalmente de mantenimiento. Son muy utilizadas para pequeñas capacidades por la comodidad que ofrecen. Pero su baja profundidad de descarga, de uso general del 20% y límite en el 40% las sitúan en la mitad de la capacidad de una estacionaria de plomo ácido.
+
+
+Nombre:  PbSb.png
+Visitas: 545
+Tamaño: 61,4 KB
+
+Típica batería monoblock, en este caso de plomo-calcio.
+
+
+UTILIZACIÓN Y MANTENIMIENTO
+
+Las baterías tienen una vida limitada, dependiendo de su composición y calidad de fabricación. Sin embargo es crucial para las baterías ser muy cuidadoso con el trato que se les dispensa, ya que pueden sufrir mermas de durabilidad importantes o incluso la muerte o incapacidad para la recuperación de la carga si su uso o mantenimiento son inadecuados.
+
+Los límites de descarga tienen que ser respetados dado que se puede dar una reacción química anómala en el interior del vaso(o vasos) que genere el fenómeno de sulfatación, en virtud del cual las placas sólidas, que son de signos opuestos, pueden quedar unidas o comunicadas, lo que supondrá la total inutilización de las mismas. De hecho el fenómeno de sulfatación comienza ya con la primera descarga del acumulador,que en las sucesivas reacciones químicas de los ciclos de carga y descarga va perdiendo capacidad útil. Esto se da debido a que la reacción química nunca es perfecta, es decir, siempre existe alguna cantidad de reactivo que no consigue combinarse o lo hace de manera anómala, pierde así la capacidad de volver a su estado original y queda cristalizado en las placas, el líquido o el fondo del vaso. Se ha observado que el calor interno que adquiere el electrolito está relacionado con este fenómeno. Estos errores de carga son mas frecuentes cuanto mas rápida es la descarga y cuanto mas profunda es. Por lo tanto la manera ideal de operar una batería estacionaria es realizar los consumos dilatadamente, no encendiendo varios dispositivos al mismo tiempo. La vida de una batería no se mide en años sino en ciclos, cada ciclo de carga y descarga completo es la unidad. Con un buen uso y mantenimiento se consiguen vidas útiles muy largas, aunque difíciles de cuantificar en tiempo. Lo que es seguro es que en la vida de la instalación las baterías tipo Pb-Sb deberán ser sustituidas por lo menos una vez, en muchos casos dos veces o incluso mas.
+
+En cuanto al mantenimiento hay que evitar que el nivel de líquido baje del mínimo establecido añadiendo mas cuando sea preciso. También es conveniente someter la batería a una sobrecarga o carga de ecualización durante aproximadamente dos horas una vez al mes cuando es nueva y mas a menudo a medida que pasa el tiempo. Con esta carga de ecualización consistente en cargar al máximo y seguir inyectando energía de los paneles durante un tiempo, se consigue hacer burbujear el líquido, con lo que las substancias no reaccionadas que están en el vaso, electrolito (líquido) ylas placas probablemente reaccionen parcialmente ,con lo que se conseguirá cierta recuperación de material activo.La ecualización produce una leve mezcla del electrolito que redunda en un mejor rendimiento general de la batería. Destacaremos también la necesidad de mantener la temperatura dentro de unos parámetros adecuados cercanos a los 20ºC. El exceso de calor perjudica la capacidad de la batería y el frío extremo puede ralentizar mucho las reacciones químicas, impidiendo la entrega de carga con normalidad. El riesgo de congelación es muy bajo si la batería está plenamente cargada, pero si está descargada este riesgo aumenta y puede producirse la total inutilización de la misma.
+
+CAPACIDAD DE ACUMULACIÓN INSTALADA
+
+El acumulador tiene que ofrecer una capacidad suficiente para que , en ausencia de sol varios días por adversidades climatológicas, exista un suministro suficiente de electricidad.Por tanto su capacidad debe ser equivalente al consumo diario estimado por el número de días de autonomía deseado. Si hemos estimado el consumo en wh ( vatiospor hora) es fácil saber cual será la capacidad necesaria de la batería, ya que si dividimos el consumo(Wh) entre la tensión del circuito(V) tendremos la capacidad de la batería (Ah). Por ejemplo:
+
+Necesitamos 1000 Wh de consumo durante 6 dias. La tensión de la batería esde 24 V. Pues 1000Wh * 6 días = 6000 Wh. Para saber cuantos amperios por hora son dividimos entre la tensión: 6000/24 = 250 Ah. Una batería de 250Ah no nos dará esa energía,ya que su profundidad de descarga nunca será del 100%. Supongamos que este modelo de batería tiene una profundidad de descarga máxima del 50%, entonces solo nos estaría dando la mitad de lo que necesitamos, con lo que la capacidad a instalar tendría que ser el doble, o sea 500Ah.
+
+Ya habíamos hablado que las baterías tienen pérdidas por autodescarga y porque gastan cierta cantidad de energía para producir las reacciones químicas de su interior (suele ser un 10%.También sabemos que pierden vida útil. Todo esto nos tiene que llevar a una mayor capacidad de la batería. Por tanto 500Ah hay que sumarle un 10% por loque consume: 500* 1.1= 550Ah. Y hay que sumarle un margen de seguridad que cubra su envejecimiento durante varios años y también posibles sobreconsumos,como mínimo un 10% mas: 550 * 1.1= 605 Ah es una batería razonablemente bien dimensionada para un consumo de 1000Wh con autonomía de 6 días en un circuito de 24V si su profundidad de descarga máxima es del 50%.
+
+ASOCIACIÓN DE BATERÍAS
+
+Cada batería tiene un voltaje de operación. Para aumentar este voltaje se pueden combinar varias baterías configurándolas en serie. LAS BATERÍAS ASOCIADAS DEBEN SER NECESARIAMENTE IDÉNTICAS EN CAPACIDAD VOLTAJE Y ESTADO DE DESGASTE.
+
+Un ejemplo sencillo de baterías en serie se da diariamente en casi todos los dispositivos del hogar que lleven dos o mas pilas. El polo negativo que no está asociado a otra pila ejerce de polo negativo del conjunto, e igual pasa con el positivo libre. El resto de polos se tocan positivo de una pila con negativo de la siguiente. En una asociación en serie de dos pilas de 1,5 voltios y 700 mAh ( mili amperios hora) se obtienen 3 voltios y 700 mAh. Es decir que se suman los voltajes y la capacidad permanece igual. Si pasamos esto a acumuladores estacionarios el esquema es el mismo y el resultado también. Por tanto en las baterías Pb-Sb que se presentan en vasos de 2 V cada uno es imprescindible asociar varios vasos en serie para obtener el voltaje adecuado (generalmente12V, 24V o 48 V).
+
+Nombre:  estacionaria paralelo.jpg
+Visitas: 530
+Tamaño: 44,0 KB
+
+Batería estacionaria compuesta de seis elementos de 2V conectados en serie.
+
+También se pueden asociar las baterías para aumentar la capacidad de carga sin tocar el voltaje ( en paralelo) aunque este tipo de conexión no se recomienda en absoluto por motivos que escapan al nivel básico de esta guía.Esto se consigue uniendo por un conductor todos los polos positivos y por otra parte todos los negativos. El resultado es mantener el voltaje original nominal de las baterías y sumar las capacidades de estas. Un ejemplo:
+
+Si disponemos de dos baterías monoblock idénticas de 500 Ah y 12V obtendremos:
+
+Conectándolas en serie( un positivo con un negativo y los polos libres al circuito) nos darán 500 Ah a 24V
+Conectándolas en paralelo (uniendo ambos positivos y por otro lado ambos negativos y de los polos de una al circuito) nos darán 1000 Ah a 12V.
+
+
+Seguridad: Ventilación
+
+Este apunte contiene opiniones enfrentadas, pero hasta que alguien diga todo lo contrario ahí queda y es de obligado cumplimiento para la salud de nuestros caros aparatos.
+
+Tus baterías estacionarias “respiran” y su respirar es hidrógeno, buen mas bien oxihidrógeno (HHO), y tiene la mala costumbre de arder al mezclase de nuevo, esto no quiere decir que vaya haber una explosión, pero ese reenlace produce en puntos muy pequeños, microscópicos, altas temperaturas y por desgracia siempre se produce en los cables o en los aparatos que están sobre ellas, es fácil de verlo en muchas instalaciones que tiene los cables sobre las baterías, que estos están siempre húmedos y si los tocas notas el plástico como si estuviese atacado por acido, ese acido, que no es tal, es el hidrógeno al mezclarse con el oxigeno, esa reacción si perfora el aislante convierte al brillante cobre en un cobre negruzco y lleno de “carbonilla” y por consiguiente mas resistivo y propenso a alcanzar mayores temperaturas, en cuanto a los aparatos electrónicos, estos suelen tener pequeños ventiladores de aspiración de aire para enfriar los elementos internos, lo que hace que el reenlace se produzca dentro de ellos, generando humedades y pequeñas corrosiones que con el tiempo terminan destruyéndolos.
+
+Lo ideal es no colocar nada sobre las batería, ya se que cada metro de cable desde el regulador o desde el inversor aumenta su diámetro de una forma exagerada, también se que estos aparatos no se puede colocar mas bajos de lo que se colocan por seguridad eléctrica, pero una distancia de unos dos o tres metros son suficientes, y mejor será la cosa si hay una buena ventilación y si la corriente de aire no circula en dirección a donde tenemos colocados los elementos electrónicos.
+
+En cuanto a la ventilación, se recomienda que sea de abajo hacia arriba, y para conseguirla basta con tener una rejilla en la parte baja de las baterías y otra rejilla en la parte superior de estas y ya si la ventilación superior es “forzada” “mejor que mejor”.
+
+Para evitar este tema y para favorecer un menor mantenimiento de las baterías se han sacado al mercado unos “tapones-botellas de plástico” llamados “recombinadores de gases”, lo que hacen estos tapones es forzar la recombinación dentro de ellos y que el fruto de este reenlace, que es agua, vuelva de nuevo a la batería.
+
+Humedad sospechosa
+
+Es normal que haya pequeñas salpicaduras de electrolito durante el funcionamiento de la batería, normalmente arrastrados cuando la batería gasea fuertemente. Ese electrolito contiene agua, ácido sulfúrico, y sulfatos.
+
+No son grandes cantidades y, si solo fuesen agua, ni se notarían, porque se secarían rápidamente. Y de hecho lo hacen..... depositando pequeños cristales de sulfatos donde estuvieron. Pero esos sulfatos son altamente higroscópicos en algunos casos y se vuelven a disolver al absorber la humedad ambiente, con lo cual, la mancha de humedad es permanente
+
+Esas manchas no tienen mas importancia salvo por el hecho de que son altamente corrosivas y es aconsejable limpiarlas. Teniendo en cuenta que son muy acidas, o se limpian con abundante agua (con el riesgo de que parte del agua entre en el vaso), o con un trapo mojado en una disolución de alguna sustancia básica. Una buena opción es disolver algún antiácido, de los que se toman para evitar ardores (acidez) de estomago (bicarbonato sódico, Almax, etc...) en un vaso de agua, humedecer un trapo de algodón en ese vaso, y limpiar con el las humedades superficiales de los vasos. Ponerse guantes de goma, las dichosas humedades de los vasos son muy ácidas.
+
+Baterías en paralelo, lo que se debe de evitar
+
+Lo prometido es deuda y como tal lo cumplo.
+
+Como es sabido y sino lo repito de nuevo, las baterías para energía solar no se deben de colocar en paralelo ¡jamás!, ¿jamás?, ¡SI!, pero…. se puede dar la situación por lo que sea de que no nos queda mas remedio que colocarlas en paralelo, entonces adquirimos un nivel altísimo de papeletas para que las baterías terminen matándose unas a otras.
+
+¿Cuál es la solución?, pues colocar una serie de elementos que nos permitan hacer esto de una manera mas segura, ojo, esto no quiere decir que todo sea “miel sobre hojuelas”, pues para asegurar que nuestras baterías no se maten entre ellas debemos de hacer un gasto adicional que dependiendo que casos puede ampliar la factura bastante, pues a mayor potencia de consumo, mayor es el gasto y la dificultad para encontrar los elementos que coincidan con nuestro voltaje, siendo a menores voltajes donde los elementos son mas fáciles de encontrar.
+
+He realizado cinco esquemas de cómo se debe de realizar la conexión de las baterías, siendo los dos primeros para baterías de 12V y en plan económico, pues muchos elementos no se han colocado.
+
+Los esquemas tres y cuatro son para mayor potencia siendo el tres para inversor normal y el cuatro para inversor cargador.
+
+El esquema cinco consta de los elementos mínimos de seguridad, claro que esto como todo, a mas azúcar mas dulce, este esquema tiene un diodo para cuando carga el inversor y voltímetro por cada batería, para poderlas vigilar de un vistazo, pues en cuanto una flaquee en el voltaje hay que ver que es lo que le pasa, en el resto de esquemas he supuesto que esto lo haríamos con un “tester”.
+
+El contactor de los esquemas cuatro y cinco debe de conectarse cuando se inicia la carga desde el inversor-cargador y desconectarse cuando termina, siendo este contactor de los “normalmente abierto”, vamos, si conexión.
+
+El diodo “DA” es necesario para que el regulador sepa a que voltaje están las baterías, este problema no sucede en el inversor cargador.
+
+También hay que “tarar” el regulador (si se puede) para que tenga en cuenta la caída de tensión por los diodos, esto mismo hay que hacerlo en el inversor-cargador, ojo, la caída de tensión entre el regulador y la batería no tiene que ser la misma que entre las baterías y el inversor cargador, esto se sabe midiéndolo con un “tester”, aunque normalmente el fabricante del diodo te da la caída de tensión en la hoja técnica.
+
+La batería que soporta el diodo “DA” es la batería “master” y es la que mas va ha sufrir, por lo que es la que hay que vigilar mas.
+
+Es aconsejable que las baterías sean todas iguales, pues la carga que recibirán será igual a la “master” pero en caso de que no sean, cosa no recomendable, la “master” debe de ser la de mayo capacidad.
+
+No se pueden mezclar en paralelo baterías de diferente voltaje a la “master”, vamos que si la master es de 12V las demás deben de dar en paralelo 12V.
+
+El disparate que se puede hacer, pero que no se debe de hacer.
+
+¿Y si son dos de 6 voltios?, pues se serian a 12V y luego se colocan en paralelo con la “master”.
+
+Esquema 1
+
+Baterías fotovoltaicas. Nivel básico.-d1.jpg
+
+Esquema 2
+Baterías fotovoltaicas. Nivel básico.-d2.jpg
+
+Esquema 3
+Baterías fotovoltaicas. Nivel básico.-d3.jpg
+
+Esquema 4
+Baterías fotovoltaicas. Nivel básico.-d4.jpg
+
+Esquema 5
+Baterías fotovoltaicas. Nivel básico.-d5.jpg
+
+El porque:
+
+Cuando se paralelan baterías completamente nuevas y exactamente iguales, en teoría no debe pasar nada. Pero cuando pasa un tiempo, dejan de ser exactamente iguales, pues sus resistencias internas cambian, y sus tensiones de equilibrio también.
+
+Cuando esas baterías, que han dejado de ser exactamente iguales, se someten a la carga, puede ocurrir varias cosas:
+- Si los tiempos de carga están bien calculados, unas se cargaran al 100% mientras las otras todavía no habrán llegado, con lo cual, con el tiempo, se produce sulfatación en algunas de ellas.
+- O también puede ocurrir que, queriendo cargar algunas de ellas al 100%, las otras se sobrecarguen, cosa que tampoco le conviene.
+- Y además, gracias a sus diferentes resistencias internas, por algunas de ellas circulará más corriente que por las otras, lo que significa que unas se cargarán antes que las otras. Al estar en paralelo, no hay forma de asegurar que las baterías traguen exactamente la misma intensidad de corriente, por lo que unas se llenaran antes que las otras.
+
+En el proceso de reposo, cuando no están dando potencia, resulta que las tensiones de equilibrio son diferentes. En ese caso, las que tiene una tensión de equilibrio mayor, se descargan sobre las otras (sino tienen diodos, y si tienen puede que la “master” sufra la descarga sobre las más descargadas). Como consecuencia de ello, las que tienen una tensión de equilibrio más baja, se sobrecargan, y las otras se descargan. Al cabo del tiempo, el estado de carga será diferente en cada una de ellas. Además, al haber un traspaso de corriente de unas a otras (en caso de no haber diodos y siempre la “master”), las baterías se ciclan. Es decir, que se "gastan" sin necesidad.
+
+En el proceso de descarga, cuando están dando potencia, y debido a sus diferencias internas, al cabo del tiempo algunas de ellas habrán dado más energía que las otras, lo que significa que el estado de carga de las baterías será diferente. Siendo así, cuando dejan de dar potencia, otra vez la más cargadas o lo que es lo mismo, las que menos se han descargado y con una tensión mayor, se descargas sobre las otras (sin diodos y siempre la “master”), con el consiguiente trasvase de amperios y ciclado. Otra vez se vuelven a "desgastar" sin necesidad.
+
+Y así siempre que se cargan y descargan. Eso, al cabo de muchos ciclos, es como si hubiesen dado más ciclos de lo que realmente hacía falta, con el consiguiente envejecimiento prematuro.
+
+Cuando se paralelan baterías nuevas con viejas, las nuevas, que tiene mayor capacidad y tensión, por lo que se ciclaran más, porque en reposo y en descarga se descargan sobre las otras. La consecuencia es que la vieja hace trabajar a la nueva sin necesidad, y en no mucho tiempo tienes todas igual de viejas.
+
+NOTA ADICIONAL (23/08/2014):
+
+Después de que a un forero se le calentase una batería he pensado que la mejor manera de alertar de que la batería “master” corre peligro porque esta suministrado corriente a otra batería es colocándole un fusible de 1A y una bombilla de los suficientes vatios para que no se encienda cuando el fusible no este fundido, creo que con una bombilla de “neon” de cuadro de maniobra a 12V de un color rojo es mas que suficiente para alertarnos que el fusible se ha fundido y con la suficiente resistencia para no encenderse mientras este funcione bien.
+
+En esta nota adjunto una ampliación de cómo debería de hacerse la modificación, como es una cosa opcional, pues es una decisión personal el colocar los elementos o no, porque cada vez que añadimos un elemento el tinglado sube de precio, no he tenido a bien el modificar el resto de esquemas.
+
+Nombre:  D6.JPG
+Visitas: 510
+Tamaño: 8,3 KB
+Última edición por solarweb; 21/05/2019 a las 16:55 Razón: Pasar de Solarwiki a foros

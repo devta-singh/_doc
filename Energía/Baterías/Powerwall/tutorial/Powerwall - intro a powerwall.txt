@@ -1,0 +1,125 @@
+Powerwall - intro a powerwall.txt
+
+Tu casa a pilas. Intro para hacer un powerwall!
+Enfrentando el futuro que viene, una de las cosas que queremos promover es la independencia energética, alimentaria, sanitaria....
+
+Hoy vamos con el tema de la energía.
+
+Lo típico que hemos usado hasta ahora son baterías de plomo, pero el mercado de consumo está desechando un material que será oro para que podamos hacer nuestra propia batería de litio: Las famosas celdas 18650.
+
+Son baterías recargables que podemos agrupar para crear una batería.
+
+Aquí doy un par de pinceladas alrededor del tema para aquel que quiera crear su propia batería.
+
+Muchas de estas celdas las puedes comprar recicladas a empresas como batterysecondlife.com
+pero también las puedes obtener tu mismo de equipos desechados, baterías de taladros, destornilladores eléctricos, linternas, ordenadores portátiles, juguetes, etc.
+
+Esas baterías desechadas por dueños o talleres de reparación, acaban en lugares de reciclaje (no muchos en España). 
+
+Hey empresas que te venden esas baterías ya extraidas, para reciclar, incluso clasificadas por capacidad de carga. Por ejemplo: http://batterysecondlife.com.
+
+Por otra parte, hay muchos tipos de baterías 18650, dependiendo de la capacidad y de muchas cosas como la química, la capacidad de descarga, etc.
+Y hay bases de datos que puedes consultar para identificarlas como esta: https://secondlifestorage.com/index.php?pages/cell-database/
+
+Bueno, os dejo unas lineas que escribí para iniciarse en el tema del power wall.
+
+Luego (en otras entradas) abundaremos más en el tema de la estructura del todo el sistema, placas solares y demás.
+
+﻿
+
+El resumen de esto es que puedes ser independiente energéticamente, y no depender de compañias, tu puedes conseguir y generar tu propia energía.
+
+----
+
+Estoy empezando con el tema de las baterías de litio, que es un mundo.
+PAra que te hagas una idea lo que tenemos instalado son unos 7Kw, de los que podemos utilizar unos 3,5Kw cuando las baterías de plomo están nuevas.
+
+El litio nos da mayor densidad energética, así que con menos peso (y volumen) puede almacenar más energía.
+
+Otra cosa que distinguir es Kw de Kw/h.
+Kw/h son kilowatios por hora, es decir energía durante una hora.
+
+Mientras que Kw es energía almacenada.
+
+Las baterías dan más energía cuando se descargan más lentamente.
+Esto se describe con un C seguido de un número, por ejemplo, cuando se describe
+una batería se dice 500A 100C o 300A 10C, es decir que da 500A de energía si la descarga es a lo largo de 100h, o 300A si la descarga es en 10h.
+
+https://www.energiasolar365.com/preguntas/cuantos-watios-caben-en-una-bateria-de-250ah
+
+De esta forma podemos comprobar cuanta energía "real" para un uso determinado tiene una batería.
+
+Otro tema es que las baterías de Litio tienen un voltaje nominal de 3,7V que puede subir a 4,2 cuando están completamente cargadas.
+
+Las baterías tienen una curva de carga y de descarga que hace que "cueste" más cargarla hasta el 100% y de alguna manera esto puede resentir o desgastar más rápidamente la química de la celda, con lo que su vida util se acorta.
+
+Por otra parte lo mismo sucede con la descarga, si se baja de cierto voltaje igualmente la química se resiente y dura menos la batería.
+
+Así que las pilas de litio 18650, como cualquier otra batería, tienen unos voltajes de trabajo que no deberían superarse por debajo ni por arriba para preservarla.
+
+El voltaje inferior podría ser 3,6 por ejemplo (no lo conozco) y el superior 4,1
+De esa forma si no cargamos más allá de 4,1V ni la descargamos más alla de 3,6V, reducimos el efecto sobre la reducción del número de ciclos de vida.
+
+La misma batería si se descarga totalmente y se carga totalmente, gasta un ciclo de vida, sin embargo si se descarga sin llegar al tope y se carga sin forzar al tope, no cuenta como ciclo, obviamente se irá deteriorando lentamente, pero el número de ciclos efectivos de carga/descarga se alarga.
+
+Configuración de la batería.
+
+Sobre el voltaje.
+Como 3,7V no es un voltaje muy elevado, hay que poner varias baterías en serie para sumar su voltaje. por ejemplo si ponemos 10 baterías en serie (conectando el polo positivo de la primera, con el polo negativo de la segunda, y el polo positivo de la segunda con el polo negativo de la tercera, y así encadenando 10) el voltaje que obtenemos es 3,7V x 10 unidades es decir: 37V.
+
+Las aplicaciones industriales disponibles tienen unos voltajes nominales de 12V, 24V, 48V y así…
+Lo que vamos a hacer es encadenar en serie 14 o 15 baterías para alcanzar voltajes mayores similares a la de trabajo del inversor adecuado.
+
+Por ejemplo 14S serían: 3,7V x 14 = 51,8V
+Y he visto que hay inversores que aguanta 63V podrían funcionar con 15S: 15 x 3,7V = 55,5V pero el voltaje de trabajo máximo debe medirse con las celdas cargadas a 4,2V, es decir: 15 x 4,2V = 63V
+
+A efectos prácticos cuanto mayor voltaje mejor, si lo soporta la instalación. En términos de agua sería como mayor voltaje igual a mayor presión de agua.
+
+Sobre la Intensidad
+Cada batería 18650 tiene un intensidad diferente dependiendo de la química y de su construcción, pero las más típicas oscilan entre 1100mA y 3500mA.
+
+Al poner la pilas en serie aumentamos el voltaje, pero la energía (la carga que pueden almacenar) no aumenta en intensidad.
+Para aumentar la carga disponible, tenemos que poner más baterías en paralelo, de forma que las cargas se suman.
+
+Al poner unas 10 baterías en paralelo, sus intensidades (A de Amperio) se suman.
+10 x 1100mA = 11000mA es decir 11A.
+
+De esta forma, para elevar la capacidad del conjunto de batería ponemos más baterías en paralelo.
+
+Ahora las baterías que ponemos en paralelo van a recibir la carga juntas, y unas se van a cargar con más capacidad que otras. Por ejemplo hay baterías más lentas, y hay baterías que se llenan antes que otras.
+
+Creo que fue tesla que creo la palabra powerwall, para sus baterías para casas solares.
+Pero se ha empleado para conjuntos de baterías DIY (Do It Yourself)
+
+En los primeros power wall que vi, las celdas iban ensabladas con una base de plastico que ayudaba a sujetar las celdas, pero este sistema hace que para sustituir una pila en medio del conjunto, hay que desmontar el conjunto entero.
+
+Así que el sistema que desarrolló Marcos Landete (creo) me parece el más fácil de hacer, porque te permite meter y sacar celdas en caliente sin que deje de funcionar la batería.
+
+Se crean bloques de 4 baterías en paralelo, se les suelda una tira de niquel uniendo los polos negativos y otra uniendo los positivos.
+Se empaca y etiqueta y se pone a cargar.
+Y se introduce en uno de los portabaterías de la pared.
+
+La ventaja es que puedes sacar y meter estos paquetes sin que la batería deje de funcionar.
+
+Hay que tener en cuenta que cuando una batería se estropea o por si se invierte la polaridad, hay que tener un fusible al menos desde el positivo a la barra de cobre colectora, que aquí llaman bus bar.
+
+Con una batería de esta manera puedes ampliar con facilidad.
+Porque puedes quitar o sustituir paquetes de pilas sin desmontar ni parar el sistema.
+
+Los videos son de tres canales en español de
+Joan Olaria (Mallorca)
+https://www.youtube.com/channel/UCxcyEp2pczhBDMCdDdkr5Yg
+https://www.youtube.com/watch?v=YBdrodtIzVI
+de Marcos Landete (Barcelona)
+https://www.youtube.com/results?search_query=Marcos+Landete
+y de Victor J Chamorro (Madrid)
+https://www.youtube.com/channel/UC9XVJjknTITgBCN_Y43hdPg
+https://www.youtube.com/watch?v=B9V00_Okxq8
+https://www.youtube.com/watch?v=dF9c1Hs_ZaA
+y también un tipo muy divertido de Puerto Rico, Fernando Rivera
+https://www.youtube.com/channel/UCbFloKodtpEM6N9ybKgPD-w
+https://www.youtube.com/watch?v=Cb7fU6dym7I
+https://www.youtube.com/watch?v=cujRFg5Ttbo - Desmantelando las baterias. Aqui encontraremos de todo y hasta sorpresas!
+
+Este es muy interesante para poder distinguirlas y conocer su utilidad.
+https://www.youtube.com/watch?v=uf4ug8I0wWI - 18650 Genuinas, Chinas, Falsas… Cual es Cual?

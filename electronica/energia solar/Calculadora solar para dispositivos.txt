@@ -1,0 +1,4 @@
+Calculadora solar para dispositivos
+
+https://www.youtube.com/watch?v=gcbzdtRmYrM
+https://github.com/G6EJD/Processor-Solar-Power-Sleep-Calc

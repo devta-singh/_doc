@@ -1,0 +1,69 @@
+TP4056
+para paneles solares de máximo 6V
+maximo 8V
+
+cargador solar baterías 18650
+
+para proteger circuitos de 3,3V se añade un
+HT7333 LDO regulator
+
+
+Añadir un Power Path, para que la alimentación no pase siempre por la batería, creando un número de ciclos innecesario.
+
+Con unos diodos y un divisor de tensión para monitorizar el nivel de energía.
+
+SOLAR PANEL > CHARGER > BATTERY > ESP32
+
+modificaciones:
+SOLAR PANEL > CHARGER > BATTERY > (divisor de voltaje -> ADC) >ESP32
+Con un divisor de tensión (para bajar la tensión) podemos usarlo como input para un ADC y alimentar el ESP32 con un dato analógico de la corriente que generamos.
+
+-------
+
+Otros:
+
+De Andreas Spiess
+
+#278 Energy Harvesting for Makers
+https://www.youtube.com/watch?v=KaiQDS9jObY
+
+#155 The 5 Best Solar ChargerBoards for Arduino and ESP8266
+https://www.youtube.com/watch?v=ttyKZnVzic4&list=TLPQMDcwNjIwMjG1k6g3UPY3LA&index=3
+
+Energía solar económica y sencilla para nuestros pequeños proyectos (ESP32, ESP8266, Arduino)
+https://www.youtube.com/watch?v=37kGva3NW8w&list=TLPQMDcwNjIwMjG1k6g3UPY3LA&index=2
+
+#142 Solar Power for the ESP8266, Arduino, etc.
+https://www.youtube.com/watch?v=WdP4nVQX-j0&list=TLPQMDcwNjIwMjG1k6g3UPY3LA&index=1
+
+-----
+
+De otros autores:
+
+(de G6EJD - David)
+Tech Note 130 - Solar Power for Projects (Arduino/ESP8266/ESP32)
+https://www.youtube.com/watch?v=gcbzdtRmYrM
+
+
+ARDUINO con ALIMENTACION SOLAR. Muy ÚTIL y FÁCIL. 🌞💻👨‍🎓
+https://www.youtube.com/watch?v=4rVHhKAHcz4
+
+
+DIY Solar Powered WiFi Weather Station V1.0 || Arduino Weather Station
+https://www.youtube.com/watch?v=k4ISOC0WDNU
+
+
+💡 PANEL SOLAR 5v y BOMBA DE AGUA | ARDUINO y electrónica
+https://www.youtube.com/watch?v=aCTIsg6y494
+
+
+DIY Auto turn off/on solar street light
+https://www.youtube.com/watch?v=1INnhU1Jmfw
+
+
+Dual Axis Solar Tracker - DIY Arduino Powered - How to Assemble
+https://www.youtube.com/watch?v=-f6FthqPwog
+
+
+3 Cool Projects using ESP32 TFT LCD Display
+https://www.youtube.com/watch?v=4fg5LtrBwPo

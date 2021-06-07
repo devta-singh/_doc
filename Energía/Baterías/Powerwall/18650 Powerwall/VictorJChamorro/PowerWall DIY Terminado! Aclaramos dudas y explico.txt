@@ -1,0 +1,115 @@
+PowerWall DIY Terminado! Aclaramos dudas y explico cómo tengo montada la monitorización
+13,214 views•Streamed live on Dec 12, 2020
+
+Víctor J Chamorro
+3.1K subscribers
+
+1920 celdas
+14KWh
+90 kilos
+
+4 pilas 18650 por pack
+32 paquetes por grupo
+15 grupos en serie (15*3,7 = 55,5; 15*4,2 = 63)
+260A
+55 voltios (con inversor de 48V que aguanta 64V)
+
+EL BMS mueve 0,050A o 50mA
+Balancea en carga o en reposo
+Con una Raspberry lee los elementos del BMS del BMV (monitor de batrias) y del inversor
+CMONCMS muestra los gráficos
+Node red con scripts de python
+
+Nutrir con info el emoncms
+con scripts (el lo hace) con nodered.js
+
+Los paquetes se ponen en zigzag de abajo a arriba
+de forma que las filas inferiores tienen más carga
+Pero como todas las series van con bus bar (tira de cobre) no hay carga
+
+Fusible de cristal de 5A en cada paquete en el positivo
+Fusible de 200A de automoción al final de todo
+
+Busbar de malla de cobre
+buen soldador
+estaño con plomo (un 30%)
+
+
+paneles 12 x 280W 60celulas
+Inversor Axpert King
+
+Victor multiplus
+
+Lo más caro de la instalación es la batería
+
+Inversor de red Solax 
+o un Fornius
+Le acoplas un Victron para la bateria
+
+Los excesos de carga que superen la capacidad de la batería (si está cargada) se deriva a un termo eléctrico en invierno o a la depuradora de la piscina en verano.
+
+
+
+
+
+
+Se nota que se van más durante la descarga que durante la carga (el balanceo se hace en la carga)
+
+
+
+
+horas, muchas....
+
+
+---
+
+Vamos a ver qué tal funciona esto... Primer directo para explicar cómo tengo montada la monitorización y contar impresiones tras terminar el PowerWall DIY
+
+Resto de vídeos explicando el montaje:
+https://www.youtube.com/watch?v=B9V00...​
+
+Serie de vídeos del montaje de la monitorización:
+https://www.youtube.com/watch?v=MzJ9o...​
+
+Serie de vídeos del mantenimiento de la instalación solar:
+https://www.youtube.com/watch?v=i3FLL...​
+
+Para el tema de ordenar los paquetes y celdas en zigzag dejo una hoja de cálculo con un ejemplo con capacidades ficticias incrementando la capacidad en 2mAh donde se puede ver esto:
+https://docs.google.com/spreadsheets/...​ 
+
+
+- Materiales y herramientas:
+Placa soldador de puntos para batería de coche: https://bit.ly/3fblBSg​
+BMS con Bluetooth: https://bit.ly/35E7a62​
+Cobre trenzado: https://bit.ly/3fc8d0j​
+Cargador OPUS: https://bit.ly/2KkQWGT​
+Fusibles de cristal: https://bit.ly/3kHyswD​
+Soporte celdas 18650: https://bit.ly/38QjWAw​
+Tira de níquel 0.12 10m: https://bit.ly/3pBWsF7​
+Tira de níquel 0.12 1Kg: https://amzn.to/2Httl5E​
+Barras de cola termo-fusible: https://amzn.to/2IVJOk5​
+Pistola de cola: https://amzn.to/33mnWVY​
+Soldador 80W temperatura ajustable: https://amzn.to/2UTvbjh​
+Mini Amoladora 200w: https://amzn.to/35XySuE​
+Estaño 60%Sn 38%Pb 2%Cu: https://bit.ly/382PPUf​
+
+Más fotos e info en https://twitter.com/victorjchamorro/s...​
+
+
+Si compráis mediante de los enlaces de los materiales y herramientas me ayudáis!
+
+
+
+-----
+
+
+Raspberry Pi y tarjeta SD
+
+Descargar imagen emoncms para Raspberry
+Instalar node red e ir probando
+
+
+-----
+
+
+

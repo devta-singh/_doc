@@ -1,0 +1,608 @@
+
+<!-- saved from url=(0050)http://hobitus.com/en/research/high_res/converter/ -->
+<html style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Making the converter for recieving weather high resolution images</title>
+
+<link href="./Making the converter for recieving weather high resolution images_files/main.css" rel="stylesheet" type="text/css"><link type="text/css" rel="stylesheet" charset="UTF-8" href="./Making the converter for recieving weather high resolution images_files/translateelement.css"><script type="text/javascript" charset="UTF-8" src="./Making the converter for recieving weather high resolution images_files/main_es.js"></script><script type="text/javascript" charset="UTF-8" src="./Making the converter for recieving weather high resolution images_files/element_main.js"></script></head>
+
+<body bgcolor="#FFEFD3" style="position: relative; min-height: 100%; top: 0px;">
+<table border="0" cellpadding="0" cellspacing="0" width="95%" align="center">
+<tbody><tr><td><div align="left"><a href="http://hobitus.com/pda/" class="style1">Satellite weather images on PDA</a></div></td>
+<td></td></tr>
+</tbody></table>
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./Making the converter for recieving weather high resolution images_files/translate_24dp.png" width="20" height="20" alt="Google Traductor de Google"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Texto original</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Sugiere una traducci&#243;n mejor</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><noindex>
+<script language="JavaScript">
+<!-- 
+var haveFlash = (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"]) ?  navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin : 0;
+if( haveFlash ){
+haveFlash = (parseInt(haveFlash.description.substring(haveFlash.description.indexOf(".")-1))>=5);
+} else if ( navigator.userAgent && navigator.userAgent.indexOf("MSIE" ) >=0
+&& ( parseFloat( navigator.appVersion)  >=4)
+&& ( navigator.userAgent.indexOf( "Windows 95" ) >=0
+|| navigator.userAgent.indexOf( "Windows NT" ) >=0
+|| navigator.userAgent.indexOf( "Windows 98" ) >=0)){
+document.write('<SCRIPT LANGUAGE=VBScript\> \n');
+document.write(' haveFlash = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.5")))\n');
+document.write('</SCR' + 'IPT> \n');
+}
+if ( haveFlash ){
+document.write('<table border="0" cellpadding="0" cellspacing="0" width="90%" align ="center">');
+document.write('<tr><td align="right"><table><tr><td valign="middle"><a href="/research/high_res/converter/"><img src="/images/ru.gif" border="0" width="48" height="24"></a><a href="/research/high_res/converter/">rus</a></td></tr>');
+//document.write('<tr><td></td></tr><tr><td valign="middle"><a href="/en/en/research/high_res/converter/"><img src="/images/uk.jpg" border="0" width="48" height="24"></a><a href="/en/en/research/high_res/converter/">eng</a></td>');
+document.write('</tr></table></td><td>');
+document.write('<div align="center"> <object height="67" width="431" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0">\n');
+document.write('<param name=movie value="/1.swf">\n');
+document.write('<param name=quality value=medium>\n');
+document.write('<embed src="/1.swf" height="67" width="431" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash">\n');
+document.write('</embed> </object> </div>\n');
+document.write('</td></tr></table>\n');
+}
+else{
+document.write('<table border="0" cellpadding="0" cellspacing="0" width="90%" align ="center">');
+document.write('<tr><td align="right"><table><tr><td valign="middle"><a href="/research/high_res/converter/"><img src="/images/ru.gif" border="0" width="48" height="24"></a><a href="/research/high_res/converter/">rus</a></td></tr>');
+//document.write('<tr><td></td></tr><tr><td valign="middle"><a href="/en/en/research/high_res/converter/"><img src="/images/uk.jpg" border="0" width="48" height="24"></a><a href="/en/en/research/high_res/converter/">eng</a></td>');
+document.write('</tr></table></td><td>');
+document.write('<div align="center"><a href="/en/"><img src="/images/header_r1_c1.gif" alt="NOAA" width="431" height="67" border="0" ></a></div>');
+document.write('</td></tr></table>\n');
+}
+-->
+</script><table border="0" cellpadding="0" cellspacing="0" width="90%" align="center"><tbody><tr><td align="right"><table><tbody><tr><td valign="middle"><a href="http://hobitus.com/research/high_res/converter/"><img src="./Making the converter for recieving weather high resolution images_files/ru.gif" border="0" width="48" height="24"></a><a href="http://hobitus.com/research/high_res/converter/">rus</a></td></tr></tbody></table></td><td><div align="center"><a href="http://hobitus.com/en/"><img src="./Making the converter for recieving weather high resolution images_files/header_r1_c1.gif" alt="NOAA" width="431" height="67" border="0"></a></div></td></tr></tbody></table>
+<noscript>
+<table border="0" cellpadding="0" cellspacing="0" width="90%" align ="center">
+<tr><td align="right"><table><tr><td valign="middle"><a href="/research/high_res/converter/"><img src="/images/ru.gif" border="0" width="48" height="24"></a><a href="/research/high_res/converter/">rus</a></td></tr>
+<!--document.write('<tr><td></td></tr><tr><td valign="middle"><a href="/en/en/research/high_res/converter/"><img src="/images/uk.jpg" border="0" width="48" height="24"></a><a href="/en/en/research/high_res/converter/">eng</a></td>-->
+</tr></table></td><td>
+<div align="center"><a href="/"><img src="/images/header_r1_c1.gif" alt="Фото облачности со спутника" width="431" height="67" border="0" ></a></div>
+</td></tr></table>
+</noscript>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    multilanguagePage: true,
+    gaTrack: true
+  });
+}
+</script><script src="./Making the converter for recieving weather high resolution images_files/f.txt"></script>
+
+<table border="0" cellpadding="0" cellspacing="0" width="95%" align="center">
+<tbody><tr>
+<td><table border="0" cellpadding="0" cellspacing="0" width="100%" background="./Making the converter for recieving weather high resolution images_files/header_r2_c6.gif" id="Table2">
+<tbody><tr>
+<td><img src="./Making the converter for recieving weather high resolution images_files/header_r2_c1.gif" width="17" height="72" border="0"></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td align="center"><a href="http://hobitus.com/en/" class="menu">Home</a></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td><img src="./Making the converter for recieving weather high resolution images_files/header_r2_c7.gif" width="11" height="72" border="0"></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td align="center"><a href="http://hobitus.com/en/noaa/" class="menu">Satellite Images</a></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td><img src="./Making the converter for recieving weather high resolution images_files/header_r2_c7.gif" width="11" height="72" border="0"></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td align="center"><a href="http://hobitus.com/en/noaa/composite/" class="menu">Composite Images</a></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td><img src="./Making the converter for recieving weather high resolution images_files/header_r2_c7.gif" width="11" height="72" border="0"></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td align="center"><a href="http://hobitus.com/en/noaa/sfs_animation/" class="menu">Animation</a></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td><img src="./Making the converter for recieving weather high resolution images_files/header_r2_c7.gif" width="11" height="72" border="0"></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td align="center"><a href="http://hobitus.com/en/noaa/shedule/" class="menu">Shedule</a></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td><img src="./Making the converter for recieving weather high resolution images_files/header_r2_c7.gif" width="11" height="72" border="0"></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td align="center"><a href="http://hobitus.com/en/research/" class="menu">Research</a></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td><img src="./Making the converter for recieving weather high resolution images_files/header_r2_c7.gif" width="11" height="72" border="0"></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td align="center"><a href="http://hobitus.com/en/equipment/" class="menu">Equipment</a></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td><img src="./Making the converter for recieving weather high resolution images_files/header_r2_c7.gif" width="11" height="72" border="0"></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td align="center"><a href="http://hobitus.com/en/complaint/" class="menu">Feedback</a></td>
+<td> <img src="./Making the converter for recieving weather high resolution images_files/header_r2_c18.gif" width="11" height="72" border="0"></td>
+<td align="right"><img src="./Making the converter for recieving weather high resolution images_files/header_r2_c23.gif" width="120" height="72" border="0"></td>
+</tr>
+</tbody></table></td>
+</tr>
+<tr>
+<td><table align="left" border="0" cellpadding="0" cellspacing="0" background="./Making the converter for recieving weather high resolution images_files/header_r3_c19.gif" height="41" width="100%" id="Table3">
+<tbody><tr>
+<td valign="top"><img src="./Making the converter for recieving weather high resolution images_files/header_r3_c1.gif" width="491" border="0"></td>
+<td valign="top"><img src="./Making the converter for recieving weather high resolution images_files/header_r3_c20.gif" width="13" height="41" border="0"></td>
+<td width="96%" height="41">
+<form action="http://www.hobitus.com/en/search/" id="cse-search-box">
+<div>
+<input type="hidden" name="cx" value="partner-pub-3985123516598681:ee1n3u-fyaa">
+<input type="hidden" name="cof" value="FORID:10">
+<input type="hidden" name="ie" value="windows-1251">
+<input type="text" name="q" size="31" placeholder="" style="height: 25px; width: 263px; background: url(&quot;https://www.google.com/cse/static/images/1x/ru/branding.png&quot;) left 9px top 50% no-repeat rgb(255, 255, 255);">
+<input type="submit" name="sa" value="Поиск">
+</div>
+<input name="siteurl" value="hobitus.com/en/research/high_res/converter/" type="hidden"><input name="ref" value="www.google.com/" type="hidden"><input name="ss" value="" type="hidden"></form>
+<script type="text/javascript" src="./Making the converter for recieving weather high resolution images_files/brand"></script></td>
+<td valign="top" align="right"><img src="./Making the converter for recieving weather high resolution images_files/header_r3_c24.gif" width="112" height="41" border="0"></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+<div align="center">
+</div> <table border="0" cellpadding="0" cellspacing="0" align="center">
+<tbody><tr><td width="95%"><p align="center">1.7GHz &gt; 137MHz converter </p>
+<p align="center">(Meteosat, GOES converter) </p>
+<p align="center">Radek Vaclavik, OK2XDX </p>
+<p align="center"><img width="410" height="240" src="./Making the converter for recieving weather high resolution images_files/index_clip_image002_0000.jpg"></p>
+<p>&nbsp; </p>
+<p>&nbsp; </p>
+<p>Few years ago I published first article about Meteosat converter which converter signal from 1691MHz to 137.5MHz. This construction became very favorite and I know about 100 converters working properly from New Zeeland to Finland . </p>
+<p>When I changed my QTH I wanted to also make one converter for my new ham shack but I got bad surprise. The heart of the converter, HPMX5001 was marked as obsolete and was not longer available! The only possibility was to buy it from US for 10 times higher price or to think about it again and build new converter. I decided to go the second way because I still see a lot of interest to this hardware. </p>
+<p>I was searching old articles with downconverters and I tried to find optimal solution. The simplest one was construction by Matjaz S53MV from 1995. Matjaz's constructions always used standard components (or older ones) and wasn't limited to some special ICs like my converter.
+</p>
+<p>Matjaz's construction was published in CQ ZRS magazine and block diagram is shown in Fig.1. Despite on its simplicity there were few disadvantages. The first one is bad noise figure of the converter about 8dB. Just for comparison my converter had over 1dB. Majaz's converter was used with 2-stage low noise preamplifier at antenna and poor noise figure of the converter wasn't problem. Another disadvantage was necessity of special crystal if we want to have 137.5MHz output. Matjaz used his own receiver, which was tuned to various frequencies, and he used standard crystal in the converter. My goal was to have the converter output at 137.5MHz as there are a lot of easy and cheap receivers for this band with fixed frequencies (137.5MHz, 137.62,..).
+</p>
+<p align="center"><img width="564" height="421" src="./Making the converter for recieving weather high resolution images_files/index_clip_image004_0000.jpg"><em></em></p>
+<p align="center"><em>Fig.1. Block diagram of S53MV's converter. </em>
+</p>
+<p>&nbsp; </p>
+<p>Using PLL if the phase noise is not problem for us can eliminate the disadvantage of the special crystal. Comparison in money is about 10Euro for special Xtal and about 7Euro for PLL &amp; microcontroller. Other problem of PLL is what device type to use. It should work up to about 1.7GHz in ideal case, it should be cheap and easy to buy. I didn't find any in Czech republic . Nice circuits are available in quantities of 100 and more... Easier situation is with PLLs to about 1GHz. I selected UMA1014 from Philips which is not really new, but still very good. I found good source for it in good price. Of course, some TV tuner ICs can be used like TSA5511, TSA5512, SDA3202 etc. </p>
+<p>UMA1014 works up to 1.1GHz and can't be used for direct signal synthesis at 1.6GHz (1.7GHz-137.5MHz). At this point, harmonic mixer is a solution for us! This mixer needs local oscillator signal at 1 of what is real needed. In our case 776.75MHz is needed for receiving 1st Meteosat channel at 137.5MHz. In fact it is the same principle like was used in HPMX5001. The disadvantage of this mixer is high noise figure which also depends on level of local oscillator signal. Matjaz measured noise figure of about 10dB. With old bipolar transistors at the converter output it resulted in bad noise figure of the entire original S53MV converter. On the other hand, the realization of the harmonic mixer is very easy – two diodes and two striplines at the PCB. </p>
+<p>Today there are a lot of good bipolar or unipolar transistors for 2GHz application at the market. It is good to do little calculations before we start to design the converter. The goal is to determine what amplifiers (transistors or ICs) should be used with goal to achieve low noise figure and good gain. Total noise figure of cascaded system is given by Friiss formula: </p>
+<p>&nbsp; </p>
+<p><strong>NF(system)&nbsp; =&nbsp; NF(1)&nbsp; +&nbsp; (NF(2) - 1) / (A P (1)) +&nbsp; (NF(3) - 1) / (A P (1)A P (2))+ (NF(k) - 1) / (A P (1)A P (2)..A P (k-1)) </strong></p>
+<p>&nbsp; </p>
+<p>where NF(x) are noise figures of given stages and Ap(x) are related gains </p>
+<p>&nbsp; </p>
+<p>I wrote short Excel macro for comfortable calculations. We just wrote inputs (noise figure and gain) in dB and we will see total parameters of the system. </p>
+<p>&nbsp; </p>
+<p>The block diagram of our system is shown at Fig.2. The input transistor is followed by band pass filter realized at standard FR4 PCB. The next amplifier stage can be realized by another transistor or by monolithic integrated circuit (MMIC). Next filter is followed by harmonic mixer and easy amplifier at 137.5MHz. </p>
+<p>During development stage I was thinking about 3 variants. First one was with old MRF571 transistors; the second was with new bipolar transistors at both stages. The last one was with GaAs FET transistor at the output followed by MMIC amplifier. I chose BFP183 as standard bipolar transistor with guaranteed gain 12dB and NF 2dB at 1.8GHz. ATF21186 was my choice for cheapest GaAs FET I can obtain, gain 13dB ad NF 0.6dB. For MMIC I used non-standard SGA4586 from Sirenza Microdevices with gain 18dB and NF 1.9dB. This is good parameter compared to other MMICs with NF about 4dB. Last amplifier stage is realized with BFR93 (BFR91 in original article). Tables below summarize all these parameters and we can see total noise figure at each system point. Readers can play with XLS file and can see real impact of bad or good transistor at the input or at the output. </p>
+<p>&nbsp; </p>
+<p align="center">&nbsp; </p>
+<p align="center"><img width="648" height="252" src="./Making the converter for recieving weather high resolution images_files/index_clip_image005_0000.gif"></p>
+<p align="center"><em>Fig.2. Converter system block diagram. </em></p>
+<p align="center">&nbsp; </p>
+<p align="center">Tab.1. Original S53MV's schematic. </p>
+<div align="center">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td width="111" valign="bottom"><p>&nbsp; </p></td>
+<td width="64" valign="bottom"><p><strong>Amp1 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Filter1 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Amp2 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Filter2 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Mixer </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Amp3 </strong></p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong><em>Noise figure [dB] </em></strong></p></td>
+<td width="64" valign="bottom"><p align="right">4 </p></td>
+<td width="64" valign="bottom"><p align="right">3 </p></td>
+<td width="64" valign="bottom"><p align="right">4 </p></td>
+<td width="64" valign="bottom"><p align="right">3 </p></td>
+<td width="64" valign="bottom"><p align="right">10 </p></td>
+<td width="64" valign="bottom"><p align="right">3 </p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong><em>Gain [dB] </em></strong></p></td>
+<td width="64" valign="bottom"><p align="right">7 </p></td>
+<td width="64" valign="bottom"><p align="right">-3 </p></td>
+<td width="64" valign="bottom"><p align="right">7 </p></td>
+<td width="64" valign="bottom"><p align="right">-3 </p></td>
+<td width="64" valign="bottom"><p align="right">-10 </p></td>
+<td width="64" valign="bottom"><p align="right">15 </p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong>Noise figure </strong></p></td>
+<td width="64" valign="bottom"><p align="right">2.51 </p></td>
+<td width="64" valign="bottom"><p align="right">2.00 </p></td>
+<td width="64" valign="bottom"><p align="right">2.51 </p></td>
+<td width="64" valign="bottom"><p align="right">2.00 </p></td>
+<td width="64" valign="bottom"><p align="right">10.00 </p></td>
+<td width="64" valign="bottom"><p align="right">2.00 </p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong>Gain </strong></p></td>
+<td width="64" valign="bottom"><p align="right">5.01 </p></td>
+<td width="64" valign="bottom"><p align="right">0.50 </p></td>
+<td width="64" valign="bottom"><p align="right">5.01 </p></td>
+<td width="64" valign="bottom"><p align="right">0.50 </p></td>
+<td width="64" valign="bottom"><p align="right">0.10 </p></td>
+<td width="64" valign="bottom"><p align="right">31.62 </p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong>NF total </strong></p></td>
+<td width="64" valign="bottom"><p align="right">2.51 </p></td>
+<td width="64" valign="bottom"><p align="right">2.71 </p></td>
+<td width="64" valign="bottom"><p align="right">3.31 </p></td>
+<td width="64" valign="bottom"><p align="right">3.39 </p></td>
+<td width="64" valign="bottom"><p align="right">4.82 </p></td>
+<td width="64" valign="bottom"><p align="right">6.40 </p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong>NF total [dB] </strong></p></td>
+<td width="64" valign="bottom"><p align="right">4.00 </p></td>
+<td width="64" valign="bottom"><p align="right">4.33 </p></td>
+<td width="64" valign="bottom"><p align="right">5.20 </p></td>
+<td width="64" valign="bottom"><p align="right">5.30 </p></td>
+<td width="64" valign="bottom"><p align="right">6.83 </p></td>
+<td width="64" valign="bottom"><p align="right"><strong>8.06 </strong></p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong>Gain total [dB] </strong></p></td>
+<td width="64" valign="bottom"><p align="right">7 </p></td>
+<td width="64" valign="bottom"><p align="right">4 </p></td>
+<td width="64" valign="bottom"><p align="right">11 </p></td>
+<td width="64" valign="bottom"><p align="right">8 </p></td>
+<td width="64" valign="bottom"><p align="right">-2 </p></td>
+<td width="64" valign="bottom"><p align="right"><strong>13 </strong></p></td>
+</tr>
+</tbody></table>
+</div> <p align="center">&nbsp; </p>
+<p align="center">Tab.2. Version with&nbsp;BFP183 at both amplifier stages. </p>
+<p align="center">&nbsp; </p>
+<div align="center">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td width="109" valign="bottom"><p>&nbsp; </p></td>
+<td width="64" valign="bottom"><p><strong>Amp1 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Filter1 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Amp2 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Filter2 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Mixer </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Amp3 </strong></p></td>
+</tr>
+<tr>
+<td width="109" valign="bottom"><p><strong><em>Noise figure [dB] </em></strong></p></td>
+<td width="64" valign="bottom"><p align="right">2 </p></td>
+<td width="64" valign="bottom"><p align="right">3 </p></td>
+<td width="64" valign="bottom"><p align="right">2 </p></td>
+<td width="64" valign="bottom"><p align="right">3 </p></td>
+<td width="64" valign="bottom"><p align="right">10 </p></td>
+<td width="64" valign="bottom"><p align="right">1.2 </p></td>
+</tr>
+<tr>
+<td width="109" valign="bottom"><p><strong><em>Gain [dB] </em></strong></p></td>
+<td width="64" valign="bottom"><p align="right">12 </p></td>
+<td width="64" valign="bottom"><p align="right">-3 </p></td>
+<td width="64" valign="bottom"><p align="right">12 </p></td>
+<td width="64" valign="bottom"><p align="right">-3 </p></td>
+<td width="64" valign="bottom"><p align="right">-10 </p></td>
+<td width="64" valign="bottom"><p align="right">20 </p></td>
+</tr>
+<tr>
+<td width="109" valign="bottom"><p><strong>Noise figure </strong></p></td>
+<td width="64" valign="bottom"><p align="right">1.58 </p></td>
+<td width="64" valign="bottom"><p align="right">2.00 </p></td>
+<td width="64" valign="bottom"><p align="right">1.58 </p></td>
+<td width="64" valign="bottom"><p align="right">2.00 </p></td>
+<td width="64" valign="bottom"><p align="right">10.00 </p></td>
+<td width="64" valign="bottom"><p align="right">1.32 </p></td>
+</tr>
+<tr>
+<td width="109" valign="bottom"><p><strong>Gain </strong></p></td>
+<td width="64" valign="bottom"><p align="right">15.85 </p></td>
+<td width="64" valign="bottom"><p align="right">0.50 </p></td>
+<td width="64" valign="bottom"><p align="right">15.85 </p></td>
+<td width="64" valign="bottom"><p align="right">0.50 </p></td>
+<td width="64" valign="bottom"><p align="right">0.10 </p></td>
+<td width="64" valign="bottom"><p align="right">100.00 </p></td>
+</tr>
+<tr>
+<td width="109" valign="bottom"><p><strong>NF total </strong></p></td>
+<td width="64" valign="bottom"><p align="right">1.58 </p></td>
+<td width="64" valign="bottom"><p align="right">1.65 </p></td>
+<td width="64" valign="bottom"><p align="right">1.72 </p></td>
+<td width="64" valign="bottom"><p align="right">1.73 </p></td>
+<td width="64" valign="bottom"><p align="right">1.87 </p></td>
+<td width="64" valign="bottom"><p align="right">1.92 </p></td>
+</tr>
+<tr>
+<td width="109" valign="bottom"><p><strong>NF total [dB] </strong></p></td>
+<td width="64" valign="bottom"><p align="right">2.00 </p></td>
+<td width="64" valign="bottom"><p align="right">2.17 </p></td>
+<td width="64" valign="bottom"><p align="right">2.36 </p></td>
+<td width="64" valign="bottom"><p align="right">2.38 </p></td>
+<td width="64" valign="bottom"><p align="right">2.72 </p></td>
+<td width="64" valign="bottom"><p align="right"><strong>2.84 </strong></p></td>
+</tr>
+<tr>
+<td width="109" valign="bottom"><p><strong>Gain total [dB] </strong></p></td>
+<td width="64" valign="bottom"><p align="right">12 </p></td>
+<td width="64" valign="bottom"><p align="right">9 </p></td>
+<td width="64" valign="bottom"><p align="right">21 </p></td>
+<td width="64" valign="bottom"><p align="right">18 </p></td>
+<td width="64" valign="bottom"><p align="right">8 </p></td>
+<td width="64" valign="bottom"><p align="right"><strong>28 </strong></p></td>
+</tr>
+</tbody></table>
+</div> <p align="center">&nbsp; </p>
+<p align="center">Tab.3. Version with&nbsp;ATF21186 and SGA4586 </p> 
+<p align="center">&nbsp; </p>
+<div align="center">
+<table cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td width="111" valign="bottom"><p>&nbsp; </p></td>
+<td width="64" valign="bottom"><p><strong>Amp1 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Filter1 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Amp2 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Filter2 </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Mixer </strong></p></td>
+<td width="64" valign="bottom"><p><strong>Amp3 </strong></p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong><em>Noise figure [dB] </em></strong></p></td>
+<td width="64" valign="bottom"><p align="right">0.6 </p></td>
+<td width="64" valign="bottom"><p align="right">3 </p></td>
+<td width="64" valign="bottom"><p align="right">1.9 </p></td>
+<td width="64" valign="bottom"><p align="right">3 </p></td>
+<td width="64" valign="bottom"><p align="right">10 </p></td>
+<td width="64" valign="bottom"><p align="right">1.2 </p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong><em>Gain [dB] </em></strong></p></td>
+<td width="64" valign="bottom"><p align="right">13 </p></td>
+<td width="64" valign="bottom"><p align="right">-3 </p></td>
+<td width="64" valign="bottom"><p align="right">18 </p></td>
+<td width="64" valign="bottom"><p align="right">-3 </p></td>
+<td width="64" valign="bottom"><p align="right">-10 </p></td>
+<td width="64" valign="bottom"><p align="right">20 </p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong>Noise figure </strong></p></td>
+<td width="64" valign="bottom"><p align="right">1.15 </p></td>
+<td width="64" valign="bottom"><p align="right">2.00 </p></td>
+<td width="64" valign="bottom"><p align="right">1.55 </p></td>
+<td width="64" valign="bottom"><p align="right">2.00 </p></td>
+<td width="64" valign="bottom"><p align="right">10.00 </p></td>
+<td width="64" valign="bottom"><p align="right">1.32 </p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong>Gain </strong></p></td>
+<td width="64" valign="bottom"><p align="right">19.95 </p></td>
+<td width="64" valign="bottom"><p align="right">0.50 </p></td>
+<td width="64" valign="bottom"><p align="right">63.10 </p></td>
+<td width="64" valign="bottom"><p align="right">0.50 </p></td>
+<td width="64" valign="bottom"><p align="right">0.10 </p></td>
+<td width="64" valign="bottom"><p align="right">100.00 </p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong>NF total </strong></p></td>
+<td width="64" valign="bottom"><p align="right">1.15 </p></td>
+<td width="64" valign="bottom"><p align="right">1.20 </p></td>
+<td width="64" valign="bottom"><p align="right">1.25 </p></td>
+<td width="64" valign="bottom"><p align="right">1.25 </p></td>
+<td width="64" valign="bottom"><p align="right">1.28 </p></td>
+<td width="64" valign="bottom"><p align="right">1.29 </p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong>NF total [dB] </strong></p></td>
+<td width="64" valign="bottom"><p align="right">0.60 </p></td>
+<td width="64" valign="bottom"><p align="right">0.78 </p></td>
+<td width="64" valign="bottom"><p align="right">0.98 </p></td>
+<td width="64" valign="bottom"><p align="right">0.98 </p></td>
+<td width="64" valign="bottom"><p align="right">1.08 </p></td>
+<td width="64" valign="bottom"><p align="right"><strong>1.12 </strong></p></td>
+</tr>
+<tr>
+<td width="111" valign="bottom"><p><strong>Gain total [dB] </strong></p></td>
+<td width="64" valign="bottom"><p align="right">13 </p></td>
+<td width="64" valign="bottom"><p align="right">10 </p></td>
+<td width="64" valign="bottom"><p align="right">28 </p></td>
+<td width="64" valign="bottom"><p align="right">25 </p></td>
+<td width="64" valign="bottom"><p align="right">15 </p></td>
+<td width="64" valign="bottom"><p align="right"><strong>35 </strong></p></td>
+</tr>
+</tbody></table>
+</div> <p align="center">&nbsp; </p>
+<p align="left">I decided to realize version from Tab.3. because I had good experiences from my previous design. The goal was to achieve noise figure at about 1dB and enable users to use the converter with small dish and without pre-amplifier. </p>
+<p align="center">&nbsp; <a href="http://hobitus.com/en/research/high_res/converter/index_clip_image008.gif" target="_blank"><img src="./Making the converter for recieving weather high resolution images_files/index_clip_image008_0000.gif" border="0"></a></p>
+<p align="center"><a href="http://hobitus.com/en/research/high_res/converter/index_clip_image009.gif" target="_blank"><img src="./Making the converter for recieving weather high resolution images_files/index_clip_image009_0000.gif" border="0"></a></p>
+<p align="center"><em>Fig.3. Converter schematic. </em></p>
+<p>Overall converter schematic is shown in Fig.3. L1 and C6 forms easy matching circuit for optimum noise figure of the T1. T1 is connected with grounded source. It includes negative bias voltage at the gate but the main advantage is very good stability. IC2 (ICL7660) is +5V to –5V converter, R13 is used for adjusting the best gain and NF at the T1. R2 in its drain improves stabilization and makes loading together with filter F1 (band pass 1.7GHz). This filter is realized by 2 lambda/4 resonators with coupling lines at standard FR4 PCB material. T1 drain is connected to +5V power supply via R1 and lambda/4 coil realized also at PCB. IC1 is monolithic amplifier (MMIC) SGA4586, R3 and C4 are biasing components. R3 determines amplifier current, it is 45mA as is recommended in the datasheet. You can use different type of the IC1 but you need to change value of the R3. You can also change T1 but you need to modify R1, R2 and sometimes also L1 and C6. Be careful, new transistors have VDS max 2V! Harmonic mixer with D2 and D3 is connected behind the next filter. The principle is shown in the Fig.4. </p>
+<p>&nbsp; </p>
+<p align="center"><img width="576" height="284" src="./Making the converter for recieving weather high resolution images_files/index_clip_image011_0000.jpg"></p>
+<p align="center"><em>Fig.4. Harmonic mixer realization. </em></p>
+<p>&nbsp; </p>
+<p>The frequency of the oscillator with T2 (BFR93) is determined by L2 and capacity of D1. C9 and Cx are capacitance divider, Cx is realized on PCB. Signal for PLL is taken from emitter divider R8, R9. L5, C31 and C13 make Vcc filtration. L2 is realized from piece of 0.8mm CuAg wire formed to „U“ with dimensions 10x5mm. </p>
+<p>Final signal from the mixer is filtered in L6, L7 and open stub and boosted in IF amplifier with T3 (BFR93). The output signal is connected to the connector via C16 which separates DC component. Power supply for the converter is connected via cable and is separated by L3. IC3 (MC7805) provides power supply stabilization. Most of receivers enable to bias the converter or preamplifier via cable. If you want use scanner or TRX without this option, you can build simple biasing interface, see Fig.14. L8, C32 and JP1 at converter PCB enables to bias 1.7GHz preamplifier. If you need 5V for preamp, simply cut PCB track and connect it to +5V. </p>
+<p>Digital part of the converter includes PLL synthesizer IC5 (UMA1014) in standard application. Reference quartz Q1 (8MHz) stability determines stability of the entire converter. Its frequency can be slightly adjusted by C26. Microcontroller IC4 (AT89C2051) sends data to the PLL. Its timing is derived from FX8 pin of IC5 where signal from reference oscillator divided by 8 is available. So with quartz 8MHz we have 1MHz signal for the microcontroller. The function of the controller is very easy. It sends data to the PLL and goes to sleep mode. Sleep mode reduces possible interferences. You can change frequency of the oscillator to 778.25MHz by shorting P3.7 to the GND. This frequency is needed if you want to receive Meteosat's channel2 at 137.5MHz. </p>
+<p>Program itself is very easy. It sets all registers in UMA1014. Registers determine PLL parameters and main divider value. In this application reference crystal 8MHz is used, so for 50kHz step we need: </p>
+<p>Nref = 8000000/50000 = 160 </p>
+<p>This value is available in UMA1014 at code (0001b) for bits A3-A0, see datasheet. </p>
+<p>The oscillator frequency for input signal 1691MHz, the output at 137.5MHz is: </p>
+<p>&nbsp; </p>
+<p>Fosc = (1691 – 137.5) / 2 = 776.75MHz </p>
+<p>With step 50kHz we calculate value for main divider as: </p>
+<p>&nbsp; </p>
+<p>Nmain = 776750000 / 50000 = 15535 (3CAFh) </p>
+<p>&nbsp; </p>
+<p>Some other functions have to be set: </p>
+<p>110001 0 0 b – device address , SAA pin at +5V , write </p>
+<p>111 1 1 0 00 b – disable alarm , auto-increment , following register A </p>
+<p>0 0 0 1 0001 b – no power down , current 0.5mA , reference divider 160 </p>
+<p>101 0 01 00b – passive filter , VCO A </p>
+<p>00111100b – main divider, high byte </p>
+<p>10101111b – main divider, low byte </p>
+<p>&nbsp; </p>
+<p>All the program (without I2C routines): </p>
+<p>&nbsp; </p>
+<p>org 00h </p>
+<p>jmp START </p>
+<p>org 20h </p>
+<p>START: </p>
+<p>mov FREQL,#0AFh </p>
+<p>mov FREQH,#3Ch </p>
+<p>call IISTART </p>
+<p>mov A,#11000100b </p>
+<p>call IIWR </p>
+<p>mov A,#11111000b </p>
+<p>call IIWR </p>
+<p>mov A,#00010001b </p>
+<p>call IIWR </p>
+<p>mov A,#10100100b </p>
+<p>call IIWR </p>
+<p>mov A,FREQH </p>
+<p>call IIWR </p>
+<p>mov A,FREQL </p>
+<p>call IIWR </p>
+<p>call IISTOP </p>
+<p>&nbsp; </p>
+<p>mov IE,#81h </p>
+<p>mov 87h,#01 ; IDLE </p>
+<p>nop </p>
+<p>jmp START </p>
+<p>&nbsp; </p>
+<p>&nbsp; </p>
+<p>The converter is realized on double side PCB with through holes at 0.8mm FR4 material. RF circuits are placed on one side, PLL and microcontroller on the second side. The input connector is N-type female, the output one can be either BNC or F. The entire converter is housed in waterproof box LUCA with dimensions 110x110x58mm. </p>
+<p>Coils marked as „l/4“ are quarter-wave choking coils from 6cm of 0.15mm Cu enameled wire. Solder wire ends 5mm at each side and turn it to 1mm diameter (drill). Coil detail is visible at Fig.5. L1 is piece of 0.6mm CuAg wire bended to the PCB, see fig.8. </p>
+<p>&nbsp; </p>
+<p align="center"><img width="576" height="236" src="./Making the converter for recieving weather high resolution images_files/index_clip_image013_0000.jpg"></p>
+<p align="center"><em>Fig.5. Detail of quarter wave coil. </em></p>
+<p align="center"><em>&nbsp; </em></p>
+<p align="center"><em><img width="430" height="372" src="./Making the converter for recieving weather high resolution images_files/index_clip_image015_0000.jpg"></em></p>
+<p align="center"><em>Fig.6. Detail of the L2. </em></p>
+<p align="center">&nbsp; </p>
+<p align="center">&nbsp; </p>
+<p>Most of the components are SMD, 1206 size. You haven't to worry about soldering, there is enough space around. Fig.7. shows packages of not not standard components. </p>
+<p align="center">&nbsp; </p>
+<p align="center"><img width="576" height="153" src="./Making the converter for recieving weather high resolution images_files/index_clip_image017_0000.jpg"></p>
+<p align="center">&nbsp; </p>
+<p align="center"><em>Fig.7. Packages of not standard components. </em></p>
+<p align="center">&nbsp; </p>
+<h1 align="center">Assembly and debugging </h1>
+<p>&nbsp; </p>
+<p>In the beginning visual inspection of the PCB is recommended. At first all components of the oscillator and PLL should be assembled. You don't need socket for the microcontroller Connect external power supply +5V and check tunning voltage at VTUN point. If PLL is in lock, VTUN must be between 0-5V and will respond if you move your finger near L2. The optimal value should be 2.5V. If it is not your case, deform L2 little bit. If you compress „U“, voltage will go up and vice-versa. If the tunning voltage is at upper limit, the oscillator frequency is too low and you need to shorten L2. Otherwise if VTUN is too low, you need to decrease oscillator's frequency. Fine tunning can be done also by adding solder to L2 pins. </p>
+<p>If you have some scanner, it is very good helper as you can here if the signal is clear, without any parasitic modulation. Usualy DC-DC converter ICL7660 can make some acoustic noise or some oscillating amplifier. </p>
+<p>L2 details are shown in the Fig.8. If you still can't put PLL to the lock, you will need an counter and check 1MHz signal at pin 16 of IC5 and also exact frequency of the oscillator with L2. </p>
+<p align="center">&nbsp; </p>
+<p align="center"><img width="576" height="245" src="./Making the converter for recieving weather high resolution images_files/index_clip_image019_0000.jpg"></p>
+<p align="center"><em>Fig.8. L1 detail. </em></p>
+<p>&nbsp; </p>
+<p>All remaining components without T1 and IC1 can be assembled in next phase. Check correct function of the IC2 and set VG voltage to –0.8V by R13. Also check voltages at R2 and R3. If everything is ok, disconnect power supply and connect IC1. Then you can also carefully solder T1. Remember that T1 is very sensitive device and make sure you will not destroy it by electrostatic discharge. Never touch the gate. Now again check voltages at R2 and R3 and compare it with values in the schematic. Once you solder T1, don't power converter without any load at the input. Use 50 ohm resistor instead of real antenna. </p>
+<p align="center">&nbsp; </p>
+<p align="center"><em><img width="571" height="400" src="./Making the converter for recieving weather high resolution images_files/index_clip_image021_0000.gif"></em></p>
+<p align="center"><em>Fig.9. PCB drawing, bottom. </em></p>
+<p align="center"><em><img width="571" height="400" src="./Making the converter for recieving weather high resolution images_files/index_clip_image023_0000.gif"></em></p>
+<p align="center"><em>Fig.10. PCB drawing, top. </em></p>
+<p align="center"><a href="http://hobitus.com/en/research/high_res/converter/index_clip_image024.gif" target="_blank"><img src="./Making the converter for recieving weather high resolution images_files/index_clip_image024_0000.gif" border="0"></a></p>
+<p align="center"><em>Fig.11. Assembly diagram, bottom. </em></p>
+<p align="center"><a href="http://hobitus.com/en/research/high_res/converter/index_clip_image025.gif" target="_blank"><img src="./Making the converter for recieving weather high resolution images_files/index_clip_image025_0000.gif" border="0"></a></p>
+<p align="center"><em>Fig.12. Assembly diagram, top. </em></p>
+<p align="center"><em>&nbsp; </em></p>
+<p align="center"><em><img width="576" height="379" src="./Making the converter for recieving weather high resolution images_files/index_clip_image026_0000.gif"></em></p>
+<p align="center"><em>Obr.14. Biasing through the cable. </em></p>
+<p>&nbsp; </p>
+<p>For final tuning you need to connect the converter to real antenna pointed to the satellite or to the signal generator. I'm using 60cm dish in room pointed to Meteosat through the window. If the converter works ok you have to hear the signal now. Use R13 for achieving the best signal purity. Exact converter frequency can be tuned by C26. </p>
+<p>If you use the converter in environment with big temperature changes, crystal heating is recommended. The best way is to use PTC thermistor or some method described for microwave radio amateur constructions. </p>
+<p>&nbsp; </p>
+<h2 align="center">Conclusions </h2>
+<p>&nbsp; </p>
+<p>Described converter shows that it is not problem to make construction working at 2GHz at low cost today. No special instruments are needed for the converter debugging. Thanks to good components, low noise figure and high gain is not problem even for amateur constructions. </p>
+<p>The converter haven't to be used for Meteosat only. I want to try it for NOAA HRPT receiving. With small change of used filters it can be used for Inmarsat monitoring (A-type terminals). </p>
+<p>The advantage of this construction is that components can be simply replaced by other types. IC1, T1 and D2 can be taken from old satellite tuners. PLL IC can be replaced by other circuits from TV tuners etc.. </p>
+<p>&nbsp; </p>
+<h2>&nbsp; </h2>
+<p><strong><em>Used components: </em></strong></p>
+<p>&nbsp; </p>
+<p>C1,2,18,21,22,31 33u/16V </p>
+<p>C3,4,7,12,13,15,32 1n </p>
+<p>C5,14,16,25 100p </p>
+<p>C6 1p8 </p>
+<p>C8 1p5 </p>
+<p>C9 1p </p>
+<p>C10,17,19,30 100n </p>
+<p>C11 12p </p>
+<p>C20 10u </p>
+<p>C23 68p </p>
+<p>C24,24 39p </p>
+<p>C27 2n2 </p>
+<p>C28 180n </p>
+<p>C26 15p trimmer Philips </p>
+<p>&nbsp; </p>
+<p>D1 BB221 </p>
+<p>D2 MMD353LT1 </p>
+<p>IC1 SGA4586 </p>
+<p>IC2 ICL7660 </p>
+<p>IC3 MC7805T </p>
+<p>IC4 AT89C2051 </p>
+<p>IC5 UMA1014 </p>
+<p>L1 see text </p>
+<p>L2 see text </p>
+<p>L3,5 10u </p>
+<p>L4 100u </p>
+<p>&nbsp; </p>
+<p>Q1 8MHz </p>
+<p>R1,4 47 </p>
+<p>R2,12 12 </p>
+<p>R3 33 </p>
+<p>R5,12,17 68 </p>
+<p>R6,10,15 8k2 </p>
+<p>R7,19 18k </p>
+<p>R8 180 </p>
+<p>R9 56 </p>
+<p>R11 4k7 </p>
+<p>R14,20 10k </p>
+<p>R13 10k trimmer </p>
+<p>R16 33k </p>
+<p>&nbsp; </p>
+<p>T1 ATF-21186 </p>
+<p>T2,3 BFR93 </p>
+<p>&nbsp; </p>
+<p>&nbsp; </p>
+<p><a href="http://hobitus.com/en/research/high_res/converter/index_clip_image028.jpg" target="_blank"><img src="./Making the converter for recieving weather high resolution images_files/index_clip_image028_0000.jpg" border="0"></a></p>
+<p>&nbsp; </p>
+<p><strong><img width="80" height="40" src="./Making the converter for recieving weather high resolution images_files/index_clip_image029_0000.gif"></strong></p>
+<p>&nbsp; </p>
+<p>&nbsp; </p></td>
+</tr>
+</tbody></table>
+
+<script type="text/javascript">
+google_ad_client = "pub-3985123516598681";
+/* 728x90, created 3/6/08 */
+google_ad_slot = "0147674211";
+google_ad_width = 728;
+google_ad_height = 90;
+//--
+</script>
+<script type="text/javascript" src="./Making the converter for recieving weather high resolution images_files/f(1).txt">
+</script>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Making the converter for recieving weather high resolution images_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2409075-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script type="text/javascript" language="javascript">
+var sc_project=1778232; 
+var sc_invisible=1; 
+var sc_partition=16; 
+var sc_security="e374a539"; 
+		</script>
+<script type="text/javascript" language="javascript" src="./Making the converter for recieving weather high resolution images_files/frames.js"></script><noscript>
+			<a href="http://www.statcounter.com/" target="_blank"><img src="http://c17.statcounter.com/counter.php?sc_project=1778232&amp;java=0&amp;security=e374a539&amp;invisible=1"
+					alt="web statistic" border="0"></a>
+		</noscript>
+
+<style><!-- a{font-size:small;color:#606060;}--></style>
+<table width="100%" height="30%" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td valign="bottom">
+<table width="100%" height="61" border="0" cellspacing="0" cellpadding="0" background="./Making the converter for recieving weather high resolution images_files/header_r10_c5.gif">
+<tbody><tr>
+<td width="10" align="left"><img src="./Making the converter for recieving weather high resolution images_files/header_r10_c1.gif" width="16" height="61"></td>
+<td align="center"><b>&nbsp;<span style="color: #660000;">&nbsp;©2006 HOBITUS</span> <br>
+</b></td>
+<td width="10" align="right"><img src="./Making the converter for recieving weather high resolution images_files/header_r10_c24.gif" width="16" height="61"></td>
+</tr>
+</tbody></table>
+</td></tr> <tr><td align="center" style="font-size:small;color: #606060;">
+</td>
+</tr>
+</tbody></table>
+<style><!-- a{font-family: Arial, Helvetica, sans-serif;color: #006600;	text-decoration:none;	font-weight: bold;}--></style>
+</noindex><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

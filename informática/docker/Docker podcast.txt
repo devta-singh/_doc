@@ -1,0 +1,11 @@
+Docker podcast
+https://www.youtube.com/watch?v=gsU5J3rZRWA
+
+version de linux super minimalista
+alpine linux 
+
+mosquito
+
+docker como sistema de microvirtualizacion para instalar servidores.
+
+

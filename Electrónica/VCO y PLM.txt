@@ -1,0 +1,46 @@
+VCO y PLM
+
+son los componentes de todas las telecomunicaciones
+
+
+VCO
+Voltage Controlled Oscillator
+
+
+ASK para transmitis sobre un sistema de audio preeexistente
+https://www.youtube.com/watch?v=Ee1DJ-1cY_g
+
+FSK
+https://www.youtube.com/watch?v=teWdJ0NBrF4 
+
+BFSK binary FSK
+tomamos de 2 en 2 los bits
+4FSK 4 FSK 4 frecuencias distintas (mitad de tiempo de transmisión) 2^2 = 4
+
+tomamos de 3 en 3
+8FSK ..... 3 bits a la vez 2^3 = 8
+
+tomamos de 4 en 4
+16FSK 4 bits a la vez 2^4 = 16
+
+----
+
+
+PSK
+https://www.youtube.com/watch?v=H0k0BLk_9qo
+
+Modulacion por cambio de fase
+
+4PSK  4 cambios de fase: 0, 90, 180 y 270 grados
+8PSK
+16PSK
+
+----
+https://www.youtube.com/watch?v=ZUN5rVH1Zpc
+QAM
+
+8QAM
+
+16QAM
+
+

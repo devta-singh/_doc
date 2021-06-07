@@ -1,0 +1,32 @@
+Cálculos de batería de litio
+
+
+https://www.youtube.com/watch?v=OCEfhrk5pL0
+
+
+Las baterías de litio 18650 de 3,7V se ponen en serie hasta alcanzar el voltaje deseado.
+
+Como la batería oscila entre 3,2 y 4,2V al ponerlas en serie se multiplican
+3,2 * 15 = 48
+4,2 * 15 = 63
+
+La capacidad de almacenamiento varía con las baterías en paralelo
+Si ponemos 80 celdas en paralelo en cada serie de las 15,
+la energía de para una serie de 15 baterías
+1,9 Ah x 48V = 91,2Wh
+1,9 Ah x 63V = 119,7Wh
+
+Al poner en paralelo:
+1,9 Ah * 80 = 152 Ah
+1,9 Ah * 132 =250 Ah
+
+Si tenemos más carga en cada batería
+2,5 Ah * 80 = 200 Ah
+2,5 Ah * 132 = 330 Ah
+
+Al ponerlas en serie y en paralelo aumentamos el voltaje (serie) y la potencia (paralelo)
+
+
+Celdas en ebay: https://www.ebay.es/usr/energycells
+
+
